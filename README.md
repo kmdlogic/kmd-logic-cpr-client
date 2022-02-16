@@ -53,14 +53,15 @@ When run you should see the details of the _Citizen_ for the nominated CPR numbe
 
 ## Datafordeler Provider
 
-The Datafordeler service is available to any organisation which require access to the CPR register.
+The Datafordeler service is available to any organisation which require access to the CPR register.Additionally access to private companies is also supported.
 
 To gain access, you must:
 
 1. Create a user in the Self Service Portal
-2. Add a Service User by supplying a FOCES certificate
+2. Add a Service User by supplying a FOCES certificate. 
 3. Request access to the CPR Service `CprPersonFullComplete`
-4. Optionally, request access to CPR Events `CprHaendelse` using a subscription in `PULL` mode and `JSON` format.
+4. Request access to `CprPrivatePNR`, can also be made in case if you are a private company.  
+5. Optionally, request access to CPR Events `CprHaendelse` using a subscription in `PULL` mode and `JSON` format.
 
 Useful links:
 
@@ -69,6 +70,7 @@ Useful links:
 3. [Self Service Portal (Test)](https://test04-selfservice.datafordeler.dk)
 4. [Requesting Access](https://datafordeler.dk/vejledning/brugeradgang/anmodning-om-adgang/det-centrale-personregister-cpr/)
 5. [CPR Service Details](https://datafordeler.dk/dataoversigt/det-centrale-personregister-cpr/cprpersonfullcomplete/)
+6. [CPR Service Details for private companies](https://datafordeler.dk/dataoversigt/det-centrale-personregister-cpr/cprprivatepnr)
 
 ## Service Platform Provider
 
@@ -143,3 +145,19 @@ To fetch the details of CPR changes, you may call `GetAllCprEvents` or `GetSubsc
 `GetSubscribedCprEvents` returns `ActualCount` which indicates total records before filter based on subscription. To get all events keep fetching records until `ActualCount` is zero
 
 On receiving the change notification you will then need to fetch the updated details of the citizen from the register by calling `GetCitizenByIdAsync`.
+
+## CPR for Private companies
+
+CPR for private companies is also supported by the Datafordeler and Fake Providers.
+
+To gain access , a user with FOCES certificate and request access to `CprPrivatePNR` is required from datafordeler.
+
+Some useful links if you are a private company:
+
+1. [Datafordeler Website](https://datafordeler.dk)
+2. [Self Service Portal (Production)](https://selfservice.datafordeler.dk)
+3. [Self Service Portal (Test)](https://test04-selfservice.datafordeler.dk)
+4. [Requesting Access](https://datafordeler.dk/vejledning/brugeradgang/anmodning-om-adgang/det-centrale-personregister-cpr/)
+6. [CPR Service Details for private companies](https://datafordeler.dk/dataoversigt/det-centrale-personregister-cpr/cprprivatepnr)
+
+In case you are a private company call `GetCprForPrivate` method, to fetch details of CPR .
