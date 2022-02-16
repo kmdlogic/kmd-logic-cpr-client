@@ -702,6 +702,122 @@ namespace Kmd.Logic.Cpr.Client
                 }
             }
 
+            /// <summary>
+            /// Admin End point to aprrove the experian provider configurations
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='configurationId'>
+            /// ConfigurationId which needs to be approved
+            /// </param>
+            /// <param name='isApproved'>
+            /// Approve or Reject the provider configuration
+            /// </param>
+            public static bool? ApproveProviderConfiguration(this IInternalClient operations, System.Guid configurationId, bool isApproved)
+            {
+                return operations.ApproveProviderConfigurationAsync(configurationId, isApproved).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Admin End point to aprrove the experian provider configurations
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='configurationId'>
+            /// ConfigurationId which needs to be approved
+            /// </param>
+            /// <param name='isApproved'>
+            /// Approve or Reject the provider configuration
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<bool?> ApproveProviderConfigurationAsync(this IInternalClient operations, System.Guid configurationId, bool isApproved, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.ApproveProviderConfigurationWithHttpMessagesAsync(configurationId, isApproved, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Adds new CPR Experian configuration
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='request'>
+            /// </param>
+            public static ExperianProviderConfigurationResponse CreateExperianConfiguration(this IInternalClient operations, System.Guid subscriptionId, ExperianConfigurationRequest request)
+            {
+                return operations.CreateExperianConfigurationAsync(subscriptionId, request).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Adds new CPR Experian configuration
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='request'>
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<ExperianProviderConfigurationResponse> CreateExperianConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, ExperianConfigurationRequest request, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.CreateExperianConfigurationWithHttpMessagesAsync(subscriptionId, request, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Adds or updates existing Experian configuration
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='configurationId'>
+            /// </param>
+            /// <param name='request'>
+            /// </param>
+            public static ExperianProviderConfigurationResponse UpdateExperianConfiguration(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, ExperianConfigurationRequest request)
+            {
+                return operations.UpdateExperianConfigurationAsync(subscriptionId, configurationId, request).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Adds or updates existing Experian configuration
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='configurationId'>
+            /// </param>
+            /// <param name='request'>
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<ExperianProviderConfigurationResponse> UpdateExperianConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, ExperianConfigurationRequest request, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.UpdateExperianConfigurationWithHttpMessagesAsync(subscriptionId, configurationId, request, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
@@ -814,11 +930,16 @@ namespace Kmd.Logic.Cpr.Client
             /// </param>
             /// <param name='certificatePassword'>
             /// </param>
-            /// <param name='municipalityCvr'>
+            /// <param name='serviceAgreementUuid'>
             /// </param>
-            public static ServicePlatformProviderConfiguration CreateServicePlatformConfiguration(this IInternalClient operations, System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string))
+            /// <param name='userSystemUuid'>
+            /// </param>
+            /// <param name='userUuid'>
+            /// All supported UserUuids can be fetched using '/municipalities' endpoint.
+            /// </param>
+            public static ServicePlatformProviderConfiguration CreateServicePlatformConfiguration(this IInternalClient operations, System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string serviceAgreementUuid = default(string), string userSystemUuid = default(string), string userUuid = default(string))
             {
-                return operations.CreateServicePlatformConfigurationAsync(subscriptionId, name, environment, certificate, certificatePassword, municipalityCvr).GetAwaiter().GetResult();
+                return operations.CreateServicePlatformConfigurationAsync(subscriptionId, name, environment, certificate, certificatePassword, serviceAgreementUuid, userSystemUuid, userUuid).GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -835,14 +956,19 @@ namespace Kmd.Logic.Cpr.Client
             /// </param>
             /// <param name='certificatePassword'>
             /// </param>
-            /// <param name='municipalityCvr'>
+            /// <param name='serviceAgreementUuid'>
+            /// </param>
+            /// <param name='userSystemUuid'>
+            /// </param>
+            /// <param name='userUuid'>
+            /// All supported UserUuids can be fetched using '/municipalities' endpoint.
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<ServicePlatformProviderConfiguration> CreateServicePlatformConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<ServicePlatformProviderConfiguration> CreateServicePlatformConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string serviceAgreementUuid = default(string), string userSystemUuid = default(string), string userUuid = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.CreateServicePlatformConfigurationWithHttpMessagesAsync(subscriptionId, name, environment, certificate, certificatePassword, municipalityCvr, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.CreateServicePlatformConfigurationWithHttpMessagesAsync(subscriptionId, name, environment, certificate, certificatePassword, serviceAgreementUuid, userSystemUuid, userUuid, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -864,11 +990,16 @@ namespace Kmd.Logic.Cpr.Client
             /// </param>
             /// <param name='certificatePassword'>
             /// </param>
-            /// <param name='municipalityCvr'>
+            /// <param name='serviceAgreementUuid'>
             /// </param>
-            public static ServicePlatformProviderConfiguration UpdateServicePlatformConfiguration(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string))
+            /// <param name='userSystemUuid'>
+            /// </param>
+            /// <param name='userUuid'>
+            /// All supported UserUuids can be fetched using '/municipalities' endpoint.
+            /// </param>
+            public static ServicePlatformProviderConfiguration UpdateServicePlatformConfiguration(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string serviceAgreementUuid = default(string), string userSystemUuid = default(string), string userUuid = default(string))
             {
-                return operations.UpdateServicePlatformConfigurationAsync(subscriptionId, configurationId, name, environment, certificate, certificatePassword, municipalityCvr).GetAwaiter().GetResult();
+                return operations.UpdateServicePlatformConfigurationAsync(subscriptionId, configurationId, name, environment, certificate, certificatePassword, serviceAgreementUuid, userSystemUuid, userUuid).GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -887,14 +1018,19 @@ namespace Kmd.Logic.Cpr.Client
             /// </param>
             /// <param name='certificatePassword'>
             /// </param>
-            /// <param name='municipalityCvr'>
+            /// <param name='serviceAgreementUuid'>
+            /// </param>
+            /// <param name='userSystemUuid'>
+            /// </param>
+            /// <param name='userUuid'>
+            /// All supported UserUuids can be fetched using '/municipalities' endpoint.
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<ServicePlatformProviderConfiguration> UpdateServicePlatformConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<ServicePlatformProviderConfiguration> UpdateServicePlatformConfigurationAsync(this IInternalClient operations, System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string serviceAgreementUuid = default(string), string userSystemUuid = default(string), string userUuid = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.UpdateServicePlatformConfigurationWithHttpMessagesAsync(subscriptionId, configurationId, name, environment, certificate, certificatePassword, municipalityCvr, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.UpdateServicePlatformConfigurationWithHttpMessagesAsync(subscriptionId, configurationId, name, environment, certificate, certificatePassword, serviceAgreementUuid, userSystemUuid, userUuid, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }

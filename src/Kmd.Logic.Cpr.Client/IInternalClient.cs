@@ -341,6 +341,55 @@ namespace Kmd.Logic.Cpr.Client
         /// </param>
         Task<HttpOperationResponse<CprProviderConfiguration>> UpdateDataDistributorConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
+        /// <summary>
+        /// Admin End point to aprrove the experian provider configurations
+        /// </summary>
+        /// <param name='configurationId'>
+        /// ConfigurationId which needs to be approved
+        /// </param>
+        /// <param name='isApproved'>
+        /// Approve or Reject the provider configuration
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<bool?>> ApproveProviderConfigurationWithHttpMessagesAsync(System.Guid configurationId, bool isApproved, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Adds new CPR Experian configuration
+        /// </summary>
+        /// <param name='subscriptionId'>
+        /// </param>
+        /// <param name='request'>
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<ExperianProviderConfigurationResponse>> CreateExperianConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, ExperianConfigurationRequest request, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Adds or updates existing Experian configuration
+        /// </summary>
+        /// <param name='subscriptionId'>
+        /// </param>
+        /// <param name='configurationId'>
+        /// </param>
+        /// <param name='request'>
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<ExperianProviderConfigurationResponse>> UpdateExperianConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, ExperianConfigurationRequest request, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='name'>
@@ -392,7 +441,13 @@ namespace Kmd.Logic.Cpr.Client
         /// </param>
         /// <param name='certificatePassword'>
         /// </param>
-        /// <param name='municipalityCvr'>
+        /// <param name='serviceAgreementUuid'>
+        /// </param>
+        /// <param name='userSystemUuid'>
+        /// </param>
+        /// <param name='userUuid'>
+        /// All supported UserUuids can be fetched using '/municipalities'
+        /// endpoint.
         /// </param>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.
@@ -400,7 +455,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> CreateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> CreateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string serviceAgreementUuid = default(string), string userSystemUuid = default(string), string userUuid = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <param name='subscriptionId'>
         /// </param>
@@ -415,7 +470,13 @@ namespace Kmd.Logic.Cpr.Client
         /// </param>
         /// <param name='certificatePassword'>
         /// </param>
-        /// <param name='municipalityCvr'>
+        /// <param name='serviceAgreementUuid'>
+        /// </param>
+        /// <param name='userSystemUuid'>
+        /// </param>
+        /// <param name='userUuid'>
+        /// All supported UserUuids can be fetched using '/municipalities'
+        /// endpoint.
         /// </param>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.
@@ -423,7 +484,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> UpdateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string municipalityCvr = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ServicePlatformProviderConfiguration>> UpdateServicePlatformConfigurationWithHttpMessagesAsync(System.Guid subscriptionId, System.Guid configurationId, string name = default(string), string environment = default(string), Stream certificate = default(Stream), string certificatePassword = default(string), string serviceAgreementUuid = default(string), string userSystemUuid = default(string), string userUuid = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
     }
 }
