@@ -127,6 +127,11 @@ namespace Kmd.Logic.Cpr.Client.Sample
             var detailedCitizen = await cprClient.GetCitizenDetailsByCprAsync(configuration.CprNumber).ConfigureAwait(false);
             Log.Information("Detailed citizen data: {@Citizen}", detailedCitizen);
 
+            Log.Information("Fetching {Cpr} using configuration {Name} for private company", configuration.CprNumber, cprProvider.Name);
+
+            var citizenPrivate = await cprClient.GetCitizenPrivateByCprAsync(configuration.CprNumber).ConfigureAwait(false);
+            Log.Information("Citizen data for private company: {@Citizen}", citizenPrivate);
+
             var citizenList = await cprClient.GetAllCprEventsAsync(DateTime.Today.AddMonths(-2), DateTime.Today, 1, 10).ConfigureAwait(false);
             if (citizenList == null)
             {

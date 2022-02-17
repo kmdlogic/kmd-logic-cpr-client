@@ -368,6 +368,38 @@ namespace Kmd.Logic.Cpr.Client
             return response.GetValueOrDefault(false);
         }
 
+        /// <summary>
+        /// Get citizen from the CPR register for private company.
+        /// </summary>
+        /// <param name="cpr">The CPR number.</param>
+        /// <returns>The citizen details or null if the CPR number isn't valid.</returns>
+        /// <exception cref="ValidationException">Missing cpr number.</exception>
+        /// <exception cref="SerializationException">Unable process the service response.</exception>
+        /// <exception cref="LogicTokenProviderException">Unable to issue an authorization token.</exception>
+        /// <exception cref="CprConfigurationException">Invalid CPR configuration details.</exception>
+        public async Task<CitizenPrivateResponse> GetCitizenPrivateByCprAsync(string cpr)
+        {
+            var client = this.CreateClient();
+
+            using (var response = await client.GetByCprPrivateWithHttpMessagesAsync(
+                                subscriptionId: this._options.SubscriptionId,
+                                cpr: cpr,
+                                configurationId: this._options.CprConfigurationId).ConfigureAwait(false))
+            {
+                switch (response.Response.StatusCode)
+                {
+                    case System.Net.HttpStatusCode.OK:
+                        return (CitizenPrivateResponse)response.Body;
+
+                    case System.Net.HttpStatusCode.NotFound:
+                        return null;
+
+                    default:
+                        throw new CprConfigurationException(response.Body as string ?? "Invalid configuration provided to access CPR service");
+                }
+            }
+        }
+
         public void Dispose()
         {
             this._httpClient?.Dispose();

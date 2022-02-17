@@ -411,6 +411,54 @@ namespace Kmd.Logic.Cpr.Client
             }
 
             /// <summary>
+            /// Gets citizen data by CPR for private company
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='cpr'>
+            /// Personal identification number of danish citizen
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            public static object GetByCprPrivate(this IInternalClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?))
+            {
+                return operations.GetByCprPrivateAsync(subscriptionId, cpr, configurationId).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets citizen data by CPR for private company
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// LoGIC subscription ID
+            /// </param>
+            /// <param name='cpr'>
+            /// Personal identification number of danish citizen
+            /// </param>
+            /// <param name='configurationId'>
+            /// Identifier that represents CPR environment and associated configuration
+            /// which this request will be sent with.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<object> GetByCprPrivateAsync(this IInternalClient operations, System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetByCprPrivateWithHttpMessagesAsync(subscriptionId, cpr, configurationId, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
             /// Subscribes for CPR events by CPR number
             /// </summary>
             /// <param name='operations'>
