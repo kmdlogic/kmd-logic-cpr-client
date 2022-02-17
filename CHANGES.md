@@ -1,3 +1,6 @@
+2.1.0
+* Added methods to get cpr details by cpr for private company
+
 2.0.0
 * Make client assembly strongly named
 * Make client assembly versioned
