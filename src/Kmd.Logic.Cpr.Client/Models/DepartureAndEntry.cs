@@ -22,7 +22,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the DepartureAndEntry class.
         /// </summary>
-        public DepartureAndEntry(string countryCodeEntry = default(string), string countryCodeDeparture = default(string), string landEntry = default(string), string landDeparture = default(string), string status = default(string), System.DateTime? effectFrom = default(System.DateTime?), bool? effectFromUncertaintyMarking = default(bool?), SimpleAddress foreignAddress = default(SimpleAddress))
+        public DepartureAndEntry(string countryCodeEntry = default(string), string countryCodeDeparture = default(string), string landEntry = default(string), string landDeparture = default(string), string status = default(string), System.DateTime? effectFrom = default(System.DateTime?), bool? effectFromUncertainityMarking = default(bool?), SimpleAddress foreignAddress = default(SimpleAddress))
         {
             CountryCodeEntry = countryCodeEntry;
             CountryCodeDeparture = countryCodeDeparture;
@@ -30,7 +30,7 @@ namespace Kmd.Logic.Cpr.Client.Models
             LandDeparture = landDeparture;
             Status = status;
             EffectFrom = effectFrom;
-            EffectFromUncertaintyMarking = effectFromUncertaintyMarking;
+            EffectFromUncertainityMarking = effectFromUncertainityMarking;
             ForeignAddress = foreignAddress;
             CustomInit();
         }
@@ -72,8 +72,8 @@ namespace Kmd.Logic.Cpr.Client.Models
 
         /// <summary>
         /// </summary>
-        [JsonProperty(PropertyName = "effectFromUncertaintyMarking")]
-        public bool? EffectFromUncertaintyMarking { get; set; }
+        [JsonProperty(PropertyName = "effectFromUncertainityMarking")]
+        public bool? EffectFromUncertainityMarking { get; set; }
 
         /// <summary>
         /// </summary>

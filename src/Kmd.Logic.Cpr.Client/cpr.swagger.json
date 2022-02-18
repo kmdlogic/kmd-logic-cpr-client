@@ -1848,7 +1848,7 @@
           "format": "date-time",
           "type": "string"
         },
-        "effectFromUncertaintyMarking": {
+        "effectFromUncertainityMarking": {
           "type": "boolean"
         },
         "foreignAddress": {
@@ -1863,7 +1863,7 @@
           "format": "date-time",
           "type": "string"
         },
-        "simpleAddresse": {
+        "simpleAddress": {
           "$ref": "#/definitions/SimpleAddress"
         }
       }
@@ -1912,7 +1912,7 @@
         }
       }
     },
-    "AddressInfromation": {
+    "AddressInformation": {
       "type": "object",
       "properties": {
         "address": {
@@ -1921,11 +1921,11 @@
         "status": {
           "type": "string"
         },
-        "efectFrom": {
+        "effectFrom": {
           "format": "date-time",
           "type": "string"
         },
-        "effectFromUncertaintyMarking": {
+        "effectFromUncertainityMarking": {
           "type": "boolean"
         }
       }
@@ -1954,8 +1954,8 @@
         "contactAddress": {
           "$ref": "#/definitions/ContactAddress"
         },
-        "addressInfromation": {
-          "$ref": "#/definitions/AddressInfromation"
+        "addressInformation": {
+          "$ref": "#/definitions/AddressInformation"
         },
         "nameAndAddressProtection": {
           "type": "boolean"

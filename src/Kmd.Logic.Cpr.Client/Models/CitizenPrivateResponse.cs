@@ -22,7 +22,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the CitizenPrivateResponse class.
         /// </summary>
-        public CitizenPrivateResponse(string cpr = default(string), string firstName = default(string), string lastName = default(string), string middleName = default(string), LegalGuardianPrivate legalGuardian = default(LegalGuardianPrivate), DepartureAndEntry departureAndEntry = default(DepartureAndEntry), ContactAddress contactAddress = default(ContactAddress), AddressInfromation addressInfromation = default(AddressInfromation), bool? nameAndAddressProtection = default(bool?), string status = default(string), System.DateTime? statusDate = default(System.DateTime?), bool? statusDateUncertaintyMarking = default(bool?), string firstNameMarking = default(string), string middleNameMarking = default(string), string lastNameMarking = default(string))
+        public CitizenPrivateResponse(string cpr = default(string), string firstName = default(string), string lastName = default(string), string middleName = default(string), LegalGuardianPrivate legalGuardian = default(LegalGuardianPrivate), DepartureAndEntry departureAndEntry = default(DepartureAndEntry), ContactAddress contactAddress = default(ContactAddress), AddressInformation addressInformation = default(AddressInformation), bool? nameAndAddressProtection = default(bool?), string status = default(string), System.DateTime? statusDate = default(System.DateTime?), bool? statusDateUncertaintyMarking = default(bool?), string firstNameMarking = default(string), string middleNameMarking = default(string), string lastNameMarking = default(string))
         {
             Cpr = cpr;
             FirstName = firstName;
@@ -31,7 +31,7 @@ namespace Kmd.Logic.Cpr.Client.Models
             LegalGuardian = legalGuardian;
             DepartureAndEntry = departureAndEntry;
             ContactAddress = contactAddress;
-            AddressInfromation = addressInfromation;
+            AddressInformation = addressInformation;
             NameAndAddressProtection = nameAndAddressProtection;
             Status = status;
             StatusDate = statusDate;
@@ -84,8 +84,8 @@ namespace Kmd.Logic.Cpr.Client.Models
 
         /// <summary>
         /// </summary>
-        [JsonProperty(PropertyName = "addressInfromation")]
-        public AddressInfromation AddressInfromation { get; set; }
+        [JsonProperty(PropertyName = "addressInformation")]
+        public AddressInformation AddressInformation { get; set; }
 
         /// <summary>
         /// </summary>

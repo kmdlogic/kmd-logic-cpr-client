@@ -22,10 +22,10 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the ContactAddress class.
         /// </summary>
-        public ContactAddress(System.DateTime? effectFrom = default(System.DateTime?), SimpleAddress simpleAddresse = default(SimpleAddress))
+        public ContactAddress(System.DateTime? effectFrom = default(System.DateTime?), SimpleAddress simpleAddress = default(SimpleAddress))
         {
             EffectFrom = effectFrom;
-            SimpleAddresse = simpleAddresse;
+            SimpleAddress = simpleAddress;
             CustomInit();
         }
 
@@ -41,8 +41,8 @@ namespace Kmd.Logic.Cpr.Client.Models
 
         /// <summary>
         /// </summary>
-        [JsonProperty(PropertyName = "simpleAddresse")]
-        public SimpleAddress SimpleAddresse { get; set; }
+        [JsonProperty(PropertyName = "simpleAddress")]
+        public SimpleAddress SimpleAddress { get; set; }
 
     }
 }
