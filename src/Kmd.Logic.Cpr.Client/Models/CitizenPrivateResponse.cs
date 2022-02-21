@@ -22,7 +22,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the CitizenPrivateResponse class.
         /// </summary>
-        public CitizenPrivateResponse(string cpr = default(string), string firstName = default(string), string lastName = default(string), string middleName = default(string), LegalGuardianPrivate legalGuardian = default(LegalGuardianPrivate), DepartureAndEntry departureAndEntry = default(DepartureAndEntry), ContactAddress contactAddress = default(ContactAddress), AddressInformation addressInformation = default(AddressInformation), bool? nameAndAddressProtection = default(bool?), string status = default(string), System.DateTime? statusDate = default(System.DateTime?), bool? statusDateUncertaintyMarking = default(bool?), string firstNameMarking = default(string), string middleNameMarking = default(string), string lastNameMarking = default(string))
+        public CitizenPrivateResponse(string cpr = default(string), string firstName = default(string), string lastName = default(string), string middleName = default(string), LegalGuardianPrivate legalGuardian = default(LegalGuardianPrivate), DepartureAndEntry departureAndEntry = default(DepartureAndEntry), ContactAddress contactAddress = default(ContactAddress), AddressInformation addressInformation = default(AddressInformation), bool? nameAndAddressProtection = default(bool?), string status = default(string), System.DateTime? statusDate = default(System.DateTime?), bool? statusDateUncertainityMarking = default(bool?), string firstNameMarking = default(string), string middleNameMarking = default(string), string lastNameMarking = default(string))
         {
             Cpr = cpr;
             FirstName = firstName;
@@ -35,7 +35,7 @@ namespace Kmd.Logic.Cpr.Client.Models
             NameAndAddressProtection = nameAndAddressProtection;
             Status = status;
             StatusDate = statusDate;
-            StatusDateUncertaintyMarking = statusDateUncertaintyMarking;
+            StatusDateUncertainityMarking = statusDateUncertainityMarking;
             FirstNameMarking = firstNameMarking;
             MiddleNameMarking = middleNameMarking;
             LastNameMarking = lastNameMarking;
@@ -104,8 +104,8 @@ namespace Kmd.Logic.Cpr.Client.Models
 
         /// <summary>
         /// </summary>
-        [JsonProperty(PropertyName = "statusDateUncertaintyMarking")]
-        public bool? StatusDateUncertaintyMarking { get; set; }
+        [JsonProperty(PropertyName = "statusDateUncertainityMarking")]
+        public bool? StatusDateUncertainityMarking { get; set; }
 
         /// <summary>
         /// </summary>

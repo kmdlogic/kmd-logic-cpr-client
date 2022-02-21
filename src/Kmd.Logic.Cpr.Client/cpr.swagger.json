@@ -1967,7 +1967,7 @@
           "format": "date-time",
           "type": "string"
         },
-        "statusDateUncertaintyMarking": {
+        "statusDateUncertainityMarking": {
           "type": "boolean"
         },
         "firstNameMarking": {
