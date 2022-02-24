@@ -516,6 +516,68 @@
         ]
       }
     },
+    "/subscriptions/{subscriptionId}/cpr/private/by-cpr/{cpr}": {
+      "get": {
+        "tags": [
+          "CprPrivate"
+        ],
+        "summary": "Gets citizen data by CPR for private company",
+        "operationId": "GetByCprPrivate",
+        "produces": [
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "LoGIC subscription ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "name": "cpr",
+            "in": "path",
+            "description": "Personal identification number of danish citizen",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "configurationId",
+            "in": "query",
+            "description": "Identifier that represents CPR environment and associated configuration which this request will be sent with.",
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CitizenPrivateResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
     "/subscriptions/{subscriptionId}/cpr/subscribe/by-cpr/{cpr}": {
       "post": {
         "tags": [
@@ -1528,6 +1590,9 @@
         },
         "countryCode": {
           "type": "string"
+        },
+        "isCurrent": {
+          "type": "boolean"
         }
       }
     },
@@ -1726,6 +1791,192 @@
           "type": "string"
         },
         "provider": {
+          "type": "string"
+        }
+      }
+    },
+    "SimpleAddress": {
+      "type": "object",
+      "properties": {
+        "addressLine1": {
+          "type": "string"
+        },
+        "addressLine2": {
+          "type": "string"
+        },
+        "addressLine3": {
+          "type": "string"
+        },
+        "addressLine4": {
+          "type": "string"
+        },
+        "addressLine5": {
+          "type": "string"
+        }
+      }
+    },
+    "LegalGuardianPrivate": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "simpleAddress": {
+          "$ref": "#/definitions/SimpleAddress"
+        }
+      }
+    },
+    "DepartureAndEntry": {
+      "type": "object",
+      "properties": {
+        "countryCodeEntry": {
+          "type": "string"
+        },
+        "countryCodeDeparture": {
+          "type": "string"
+        },
+        "landEntry": {
+          "type": "string"
+        },
+        "landDeparture": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "effectFrom": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "effectFromUncertainityMarking": {
+          "type": "boolean"
+        },
+        "foreignAddress": {
+          "$ref": "#/definitions/SimpleAddress"
+        }
+      }
+    },
+    "ContactAddress": {
+      "type": "object",
+      "properties": {
+        "effectFrom": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "simpleAddress": {
+          "$ref": "#/definitions/SimpleAddress"
+        }
+      }
+    },
+    "AddressPrivate": {
+      "type": "object",
+      "properties": {
+        "buildingNo": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "municipalityCode": {
+          "type": "string"
+        },
+        "municipalityName": {
+          "type": "string"
+        },
+        "roadCode": {
+          "type": "string"
+        },
+        "darAddress": {
+          "type": "string"
+        },
+        "floor": {
+          "type": "string"
+        },
+        "houseNo": {
+          "type": "string"
+        },
+        "postDistrict": {
+          "type": "string"
+        },
+        "postCode": {
+          "type": "string"
+        },
+        "doorNo": {
+          "type": "string"
+        },
+        "roadAddressingName": {
+          "type": "string"
+        },
+        "darAddressId": {
+          "type": "string"
+        }
+      }
+    },
+    "AddressInformation": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "$ref": "#/definitions/AddressPrivate"
+        },
+        "status": {
+          "type": "string"
+        },
+        "effectFrom": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "effectFromUncertainityMarking": {
+          "type": "boolean"
+        }
+      }
+    },
+    "CitizenPrivateResponse": {
+      "type": "object",
+      "properties": {
+        "cpr": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "middleName": {
+          "type": "string"
+        },
+        "legalGuardian": {
+          "$ref": "#/definitions/LegalGuardianPrivate"
+        },
+        "departureAndEntry": {
+          "$ref": "#/definitions/DepartureAndEntry"
+        },
+        "contactAddress": {
+          "$ref": "#/definitions/ContactAddress"
+        },
+        "addressInformation": {
+          "$ref": "#/definitions/AddressInformation"
+        },
+        "nameAndAddressProtection": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string"
+        },
+        "statusDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "statusDateUncertainityMarking": {
+          "type": "boolean"
+        },
+        "firstNameMarking": {
+          "type": "string"
+        },
+        "middleNameMarking": {
+          "type": "string"
+        },
+        "lastNameMarking": {
           "type": "string"
         }
       }

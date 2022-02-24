@@ -214,6 +214,27 @@ namespace Kmd.Logic.Cpr.Client
         Task<HttpOperationResponse<IList<CprProviderConfigurationModel>>> GetAllCprConfigurationsWithHttpMessagesAsync(System.Guid subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
+        /// Gets citizen data by CPR for private company
+        /// </summary>
+        /// <param name='subscriptionId'>
+        /// LoGIC subscription ID
+        /// </param>
+        /// <param name='cpr'>
+        /// Personal identification number of danish citizen
+        /// </param>
+        /// <param name='configurationId'>
+        /// Identifier that represents CPR environment and associated
+        /// configuration which this request will be sent with.
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        Task<HttpOperationResponse<object>> GetByCprPrivateWithHttpMessagesAsync(System.Guid subscriptionId, string cpr, System.Guid? configurationId = default(System.Guid?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
         /// Subscribes for CPR events by CPR number
         /// </summary>
         /// <param name='subscriptionId'>

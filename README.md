@@ -53,14 +53,15 @@ When run you should see the details of the _Citizen_ for the nominated CPR numbe
 
 ## Datafordeler Provider
 
-The Datafordeler service is available to any organisation which require access to the CPR register.
+The Datafordeler service is available to any organisation which require access to the CPR register.Additionally access to private companies is also supported.
 
 To gain access, you must:
 
 1. Create a user in the Self Service Portal
-2. Add a Service User by supplying a FOCES certificate
+2. Add a Service User by supplying a FOCES certificate. 
 3. Request access to the CPR Service `CprPersonFullComplete`
-4. Optionally, request access to CPR Events `CprHaendelse` using a subscription in `PULL` mode and `JSON` format.
+4. Request access to `CprPrivatePNR`, can also be made in case if you are a private company.  
+5. Optionally, request access to CPR Events `CprHaendelse` using a subscription in `PULL` mode and `JSON` format.
 
 Useful links:
 
@@ -69,6 +70,7 @@ Useful links:
 3. [Self Service Portal (Test)](https://test04-selfservice.datafordeler.dk)
 4. [Requesting Access](https://datafordeler.dk/vejledning/brugeradgang/anmodning-om-adgang/det-centrale-personregister-cpr/)
 5. [CPR Service Details](https://datafordeler.dk/dataoversigt/det-centrale-personregister-cpr/cprpersonfullcomplete/)
+6. [CPR Service Details for private companies](https://datafordeler.dk/dataoversigt/det-centrale-personregister-cpr/cprprivatepnr)
 
 ## Service Platform Provider
 
@@ -160,3 +162,27 @@ Following is how one may use this application
 Note: Optionally you may add the TenantName setting in the appsettings.json to get a personalized experience with the application. For e.g. the above screenshot was taken from an application with the TenantName set as below in the appsettings.json
 ![image](https://user-images.githubusercontent.com/12545474/118656331-0ea6e580-b808-11eb-9561-9b6cd26409a9.png)
 
+## CPR for Private companies
+
+CPR for private companies is also supported by the Datafordeler and Fake Providers.
+
+To gain access , a user with FOCES certificate and request access to `CprPrivatePNR` is required from datafordeler.
+
+Some useful links if you are a private company:
+
+1. [Datafordeler Website](https://datafordeler.dk)
+2. [Self Service Portal (Production)](https://selfservice.datafordeler.dk)
+3. [Self Service Portal (Test)](https://test04-selfservice.datafordeler.dk)
+4. [Requesting Access](https://datafordeler.dk/vejledning/brugeradgang/anmodning-om-adgang/det-centrale-personregister-cpr/)
+6. [CPR Service Details for private companies](https://datafordeler.dk/dataoversigt/det-centrale-personregister-cpr/cprprivatepnr)
+
+In case you are a private company call `GetCitizenPrivateByCprAsync` method, to fetch details of CPR. Below is the eg snippet for usage.
+
+```csharp
+using (var httpClient = new HttpClient())
+using (var tokenProviderFactory = new LogicTokenProviderFactory(configuration.TokenProvider))
+{
+    var cprClient = new CprClient(httpClient, tokenProviderFactory, configuration.Cpr);
+    var citizen = await cprClient.GetCitizenPrivateByCprAsync(configuration.CprNumber).ConfigureAwait(false);
+}
+```

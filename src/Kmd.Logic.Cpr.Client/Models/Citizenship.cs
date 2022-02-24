@@ -22,10 +22,11 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the Citizenship class.
         /// </summary>
-        public Citizenship(string countryName = default(string), string countryCode = default(string))
+        public Citizenship(string countryName = default(string), string countryCode = default(string), bool? isCurrent = default(bool?))
         {
             CountryName = countryName;
             CountryCode = countryCode;
+            IsCurrent = isCurrent;
             CustomInit();
         }
 
@@ -43,6 +44,11 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "countryCode")]
         public string CountryCode { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "isCurrent")]
+        public bool? IsCurrent { get; set; }
 
     }
 }
