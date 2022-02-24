@@ -13,7 +13,7 @@ namespace Kmd.Logic.Cpr.Client
         /// <remarks>
         /// This option should not be overridden except for testing purposes.
         /// </remarks>
-        public Uri CprServiceUri { get; set; } = new Uri("https://gateway.kmdlogic.io/cpr/v1");
+        public Uri CprServiceUri { get; set; } = new Uri("https://gateway.kmdlogic.io/cpr/v2");
 
         /// <summary>
         /// Gets or sets the Logic Subscription.
