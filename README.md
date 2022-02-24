@@ -176,7 +176,7 @@ Some useful links if you are a private company:
 4. [Requesting Access](https://datafordeler.dk/vejledning/brugeradgang/anmodning-om-adgang/det-centrale-personregister-cpr/)
 6. [CPR Service Details for private companies](https://datafordeler.dk/dataoversigt/det-centrale-personregister-cpr/cprprivatepnr)
 
-In case you are a private company call `GetCprForPrivate` method, to fetch details of CPR. Below is the eg snippet for usage.
+In case you are a private company call `GetCitizenPrivateByCprAsync` method, to fetch details of CPR. Below is the eg snippet for usage.
 
 ```csharp
 using (var httpClient = new HttpClient())
