@@ -63,5 +63,40 @@
     "Cpr": "0151161920",
     "FirstName": "Freja",
     "LastName": "Andersen"
+  },
+  "LegalGuardian": {
+    "GuardianName": "Silas",
+    "Address": {
+      "AddressLine1": "003",
+      "AddressLine2": "2650",
+      "AddressLine3": "Gevninge",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": "",
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "2013-02-22T12:16:55.4871719Z",
+    "SimpleAddress": {
+      "AddressLine1": "003",
+      "AddressLine2": "2650",
+      "AddressLine3": "14762",
+      "AddressLine4": "Ewell Row",
+      "AddressLine5": "Clarabellefurt"
+    }
   }
 }

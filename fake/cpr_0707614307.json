@@ -56,5 +56,40 @@
     "Cpr": "0197399710",
     "FirstName": "Luna",
     "LastName": "Valdemar"
+  },
+  "LegalGuardian": {
+    "GuardianName": "Mona",
+    "Address": {
+      "AddressLine1": "003",
+      "AddressLine2": "2650",
+      "AddressLine3": "Gevninge",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": null,
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "2011-02-22T12:16:55.474079Z",
+    "SimpleAddress": {
+      "AddressLine1": "002",
+      "AddressLine2": "5731",
+      "AddressLine3": "098B",
+      "AddressLine4": "Varde",
+      "AddressLine5": "Boulevarden"
+    }
   }
 }

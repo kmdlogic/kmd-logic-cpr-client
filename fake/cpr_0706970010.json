@@ -72,5 +72,40 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "Bits john",
+    "Address": {
+      "AddressLine1": "011",
+      "AddressLine2": "1730",
+      "AddressLine3": "Lyngby-Taarbæk",
+      "AddressLine4": "Hillerød",
+      "AddressLine5": "C.V.Jørgensens Alle"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": null,
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "2013-02-22T12:16:55.4871719Z",
+    "SimpleAddress": {
+      "AddressLine1": "204",
+      "AddressLine2": "7021",
+      "AddressLine3": "Hovedgaden",
+      "AddressLine4": "Ribe",
+      "AddressLine5": "Hove"
+    }
   }
 }

@@ -60,5 +60,40 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "Peter Hannson",
+    "Address": {
+      "AddressLine1": "011",
+      "AddressLine2": "1730",
+      "AddressLine3": "Lyngby-Taarbæk",
+      "AddressLine4": "Hillerød",
+      "AddressLine5": "C.V.Jørgensens Alle"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": "",
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "2012-02-22T12:16:55.4993333Z",
+    "SimpleAddress": {
+      "AddressLine1": "003",
+      "AddressLine2": "2650",
+      "AddressLine3": "Gevninge",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
   }
 }

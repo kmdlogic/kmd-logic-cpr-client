@@ -79,5 +79,40 @@
     "Cpr": "0198564910",
     "FirstName": "Lørke",
     "LastName": "Enevoldsen"
+  },
+  "LegalGuardian": {
+    "GuardianName": "Rowan",
+    "Address": {
+      "AddressLine1": "006",
+      "AddressLine2": "0461",
+      "AddressLine3": "8512",
+      "AddressLine4": "Aalborg",
+      "AddressLine5": "Hasseris"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": null,
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "",
+    "SimpleAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
   }
 }

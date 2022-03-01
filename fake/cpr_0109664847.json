@@ -79,5 +79,40 @@
     "Cpr": "0112848710",
     "FirstName": "Sofia",
     "LastName": "Billeskov"
+  },
+  "LegalGuardian": {
+    "GuardianName": "Serina",
+    "Address": {
+      "AddressLine1": "204",
+      "AddressLine2": "7021",
+      "AddressLine3": "Odense",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "49",
+    "CountryCodeExit": "977",
+    "LandEntry": "Dk",
+    "LandExit": "Np",
+    "EffectFrom": "2008-01-01T16:30:00+05:30",
+    "EffectFromUncertainityMarking": "false",
+    "ForeignAddress": {
+      "AddressLine1": "430",
+      "AddressLine2": "Kalikasthan",
+      "AddressLine3": "Dillibazar",
+      "AddressLine4": "Kathmandu",
+      "AddressLine5": "Nepal"
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "2009-01-01T16:30:00+05:30",
+    "SimpleAddress": {
+      "AddressLine1": "Lyngby-Taarbæk",
+      "AddressLine2": "Hillerød",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
   }
 }
