@@ -98,5 +98,40 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "Curl",
+    "Address": {
+      "AddressLine1": "204",
+      "AddressLine2": "7021",
+      "AddressLine3": "Hovedgaden",
+      "AddressLine4": "Ribe",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": null,
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "",
+    "SimpleAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
   }
 }

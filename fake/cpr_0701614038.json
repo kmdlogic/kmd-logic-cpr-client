@@ -101,5 +101,41 @@
     "Cpr": "0183849710",
     "FirstName": "Felix",
     "LastName": "Sørensen"
+  },
+  "LegalGuardian": {
+    "GuardianName": "Willy",
+    "Address": {
+      "AddressLine1": "006",
+      "AddressLine2": "0461",
+      "AddressLine3": "Odense",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": null,
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "",
+    "SimpleAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+
+    }
   }
 }

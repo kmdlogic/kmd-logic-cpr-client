@@ -220,5 +220,40 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "Susan",
+    "Address": {
+      "AddressLine1": "204",
+      "AddressLine2": "7021",
+      "AddressLine3": "Odense",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "41",
+    "CountryCodeExit": "49",
+    "LandEntry": "DE",
+    "LandExit": "Ch",
+    "EffectFrom":" 2020-01-01T17:12:00.000000+01:00",
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "5180",
+      "AddressLine2": "6990",
+      "AddressLine3": "089",
+      "AddressLine4": "Munich",
+      "AddressLine5": "Germany"
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "",
+    "SimpleAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
   }
 }

@@ -67,5 +67,41 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "John",
+    "Address": {
+      "AddressLine1": "003",
+      "AddressLine2": "2650",
+      "AddressLine3": "Gevninge",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": null,
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+
+  "ContactAddress": {
+    "EffectFrom": "2009-01-01T17:12:00.000000+01:00",
+    "SimpleAddress": {
+      "AddressLine1": "204",
+      "AddressLine2": "7021",
+      "AddressLine3": "Odense",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
   }
 }

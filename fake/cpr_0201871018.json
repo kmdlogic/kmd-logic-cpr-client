@@ -78,5 +78,40 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "Lise",
+    "Address": {
+      "AddressLine1": "003",
+      "AddressLine2": "2650",
+      "AddressLine3": "Gevninge",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": null,
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "",
+    "SimpleAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
   }
 }

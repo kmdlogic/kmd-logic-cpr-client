@@ -83,5 +83,40 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "katerine",
+    "Address": {
+      "AddressLine1": "005",
+      "AddressLine2": "2650",
+      "AddressLine3": "Gevninge",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "45",
+    "CountryCodeExit": "49",
+    "LandEntry": "DK",
+    "LandExit": "Tyska",
+    "EffectFrom": "2009-01-01T12:00:00.000000+01:00",
+    "EffectFromUncertainityMarking": "false",
+    "ForeignAddress": {
+      "AddressLine1": "009",
+      "AddressLine2": "2540",
+      "AddressLine3": "Otto-Hahn-Straße 1",
+      "AddressLine4": "85055 Ingolstadt",
+      "AddressLine5": "Germany"
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "",
+    "SimpleAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
   }
 }

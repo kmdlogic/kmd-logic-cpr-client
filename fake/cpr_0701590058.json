@@ -56,5 +56,40 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "John",
+    "Address": {
+      "AddressLine1": "093",
+      "AddressLine2": "0573",
+      "AddressLine3": "Gevninge",
+      "AddressLine4": "Varde",
+      "AddressLine5": "Boulevarden"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom":"",
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "2009-01-01T21:42:00+05:30",
+    "SimpleAddress": {
+      "AddressLine1": "011",
+      "AddressLine2": "1730",
+      "AddressLine3": "Lyngby-Taarbæk",
+      "AddressLine4": "Hillerød",
+      "AddressLine5": "C.V.Jørgensens Alle"
+    }
   }
 }

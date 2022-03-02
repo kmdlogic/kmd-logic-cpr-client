@@ -60,5 +60,40 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "Jimmy",
+    "Address": {
+      "AddressLine1": "006",
+      "AddressLine2": "0461",
+      "AddressLine3": "8512",
+      "AddressLine4": "Aalborg",
+      "AddressLine5": "Hasseris"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": null,
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "2008-01-01T17:12:00.000000+01:00",
+    "SimpleAddress": {
+      "AddressLine1": "104",
+      "AddressLine2": "48658",
+      "AddressLine3": "Hermann Courts",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
   }
 }

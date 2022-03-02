@@ -63,5 +63,40 @@
     "Cpr": "0192897710",
     "FirstName": "Malthe",
     "LastName": "Enevoldsen"
+  },
+    "LegalGuardian": {
+      "GuardianName": "Abel",
+      "Address": {
+        "AddressLine1": "204",
+        "AddressLine2": "7021",
+        "AddressLine3": "Odense",
+        "AddressLine4": "Smørum",
+        "AddressLine5": "Hove"
+      }
+    },
+    "DepartureAndEntry": {
+      "CountryCodeEntry": "",
+      "CountryCodeExit": "",
+      "LandEntry": "",
+      "LandExit": "",
+      "EffectFrom": null,
+      "EffectFromUncertainityMarking": "true",
+      "ForeignAddress": {
+        "AddressLine1": "",
+        "AddressLine2": "",
+        "AddressLine3": "",
+        "AddressLine4": "",
+        "AddressLine5": ""
+      }
+    },
+    "ContactAddress": {
+      "EffectFrom": "2013-02-22T12:16:55.4871719Z",
+      "SimpleAddress": {
+        "AddressLine1": "104",
+        "AddressLine2": "48658",
+        "AddressLine3": "Hermann Courts",
+        "AddressLine4": "New Patriciabury",
+        "AddressLine5": "MK"
+      }
+    }
   }
-}

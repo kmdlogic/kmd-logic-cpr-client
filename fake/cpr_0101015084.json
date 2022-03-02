@@ -70,5 +70,40 @@
     "Cpr": "0112847720",
     "FirstName": "Malthe",
     "LastName": "Tuttersen"
+  },
+  "LegalGuardian": {
+    "GuardianName": "Malthe",
+    "Address": {
+      "AddressLine1": "002",
+      "AddressLine2": "2650",
+      "AddressLine3": "Gevninge",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "91",
+    "CountryCodeExit": "45",
+    "LandEntry": "Blr",
+    "LandExit": "Cop",
+    "EffectFrom": "2007-01-01T17:12:00.000000+01:00",
+    "EffectFromUncertainityMarking": "false",
+    "ForeignAddress": {
+      "AddressLine1": "39",
+      "AddressLine2": "2nd Main 5th Cross",
+      "AddressLine3": "Vvk Nagar",
+      "AddressLine4": "Bangalore",
+      "AddressLine5": "Karnataka"
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "",
+    "SimpleAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
   }
 }

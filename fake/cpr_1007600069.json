@@ -305,5 +305,40 @@
     "Cpr": "0151161923",
     "FirstName": "Alma",
     "LastName": "Anton"
+  },
+  "LegalGuardian": {
+    "GuardianName": "Sam",
+    "Address": {
+      "AddressLine1": "011",
+      "AddressLine2": "1730",
+      "AddressLine3": "Lyngby-Taarbæk",
+      "AddressLine4": "Hillerød",
+      "AddressLine5": "C.V.Jørgensens Alle"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "47",
+    "CountryCodeExit": "45",
+    "LandEntry": "NOR",
+    "LandExit": "DK",
+    "EffectFrom": "2019-02-22T12:16:55.474079Z",
+    "EffectFromUncertainityMarking": "false",
+    "ForeignAddress": {
+      "AddressLine1": "104",
+      "AddressLine2": "48658",
+      "AddressLine3": "Hermann Courts",
+      "AddressLine4": "OSlo",
+      "AddressLine5": "Norway"
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "2019-02-22T12:16:55.474079Z",
+    "SimpleAddress": {
+      "AddressLine1": "002",
+      "AddressLine2": "5731",
+      "AddressLine3": "098B",
+      "AddressLine4": "Varde",
+      "AddressLine5": "Boulevarden"
+    }
   }
 }

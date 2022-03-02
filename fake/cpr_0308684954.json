@@ -79,5 +79,40 @@
     "Cpr": "0182849710",
     "FirstName": "Malthe",
     "LastName": "Andersson"
+  },
+  "LegalGuardian": {
+    "GuardianName": "Sia thomsan",
+      "Address": {
+        "AddressLine1": "104",
+        "AddressLine2": "48658",
+        "AddressLine3": "Hermann Courts",
+        "AddressLine4": "New Patriciabury",
+        "AddressLine5": "MK"
+      }
+    },
+    "DepartureAndEntry": {
+      "CountryCodeEntry": "",
+      "CountryCodeExit": "",
+      "LandEntry": "",
+      "LandExit": "",
+      "EffectFrom": null,
+      "EffectFromUncertainityMarking": "true",
+      "ForeignAddress": {
+        "AddressLine1": "",
+        "AddressLine2": "",
+        "AddressLine3": "",
+        "AddressLine4": "",
+        "AddressLine5": ""
+      }
+    },
+    "ContactAddress": {
+      "EffectFrom": "",
+      "SimpleAddress": {
+        "AddressLine1": "",
+        "AddressLine2": "",
+        "AddressLine3": "",
+        "AddressLine4": "",
+        "AddressLine5": ""
+      }
+    }
   }
-}

@@ -56,5 +56,40 @@
     "Cpr": "",
     "FirstName": "",
     "LastName": ""
+  },
+  "LegalGuardian": {
+    "GuardianName": "Cosmo",
+    "Address": {
+      "AddressLine1": "003",
+      "AddressLine2": "2650",
+      "AddressLine3": "Gevninge",
+      "AddressLine4": "Smørum",
+      "AddressLine5": "Hove"
+    }
+  },
+  "DepartureAndEntry": {
+    "CountryCodeEntry": "",
+    "CountryCodeExit": "",
+    "LandEntry": "",
+    "LandExit": "",
+    "EffectFrom": null,
+    "EffectFromUncertainityMarking": "true",
+    "ForeignAddress": {
+      "AddressLine1": "",
+      "AddressLine2": "",
+      "AddressLine3": "",
+      "AddressLine4": "",
+      "AddressLine5": ""
+    }
+  },
+  "ContactAddress": {
+    "EffectFrom": "2012-02-22T12:16:55.4993333Z",
+    "SimpleAddress": {
+      "AddressLine1": "006",
+      "AddressLine2": "0461",
+      "AddressLine3": "8512",
+      "AddressLine4": "Aalborg",
+      "AddressLine5": "Hasseris"
+    }
   }
 }
