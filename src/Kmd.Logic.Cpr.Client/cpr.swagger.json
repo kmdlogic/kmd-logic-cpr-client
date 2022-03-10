@@ -1466,7 +1466,7 @@
         }
       }
     },
-    "Address": {
+    "AddressResponse": {
       "type": "object",
       "properties": {
         "buildingNo": {
@@ -1571,7 +1571,7 @@
         "addresses": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Address"
+            "$ref": "#/definitions/AddressResponse"
           }
         },
         "citizenships": {
@@ -1672,7 +1672,7 @@
         "addresses": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Address"
+            "$ref": "#/definitions/AddressResponse"
           }
         },
         "citizenships": {
