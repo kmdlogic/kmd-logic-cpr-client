@@ -64,7 +64,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Eskildsen"
+      "CareOfAddress": "Eskildsen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     },
     {
       "BuildingNo": null,
@@ -83,7 +86,10 @@
       "MovedAway": "2017-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Holst"
+      "CareOfAddress": "Holst",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     }
   ],
   "Citizenships": [
@@ -104,7 +110,7 @@
       "AddressLine1": "003",
       "AddressLine2": "2650",
       "AddressLine3": "Gevninge",
-      "AddressLine4": "Smørum",
+      "AddressLine4": "Smï¿½rum",
       "AddressLine5": "Hove"
     }
   },

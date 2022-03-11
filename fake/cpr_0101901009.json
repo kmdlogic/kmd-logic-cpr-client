@@ -48,7 +48,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Buhl"
+      "CareOfAddress": "Buhl",
+      "DarAddressId": "002",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [
@@ -68,9 +71,9 @@
     "Address": {
       "AddressLine1": "011",
       "AddressLine2": "1730",
-      "AddressLine3": "Lyngby-Taarbæk",
-      "AddressLine4": "Hillerød",
-      "AddressLine5": "C.V.Jørgensens Alle"
+      "AddressLine3": "Lyngby-Taarbï¿½k",
+      "AddressLine4": "Hillerï¿½d",
+      "AddressLine5": "C.V.Jï¿½rgensens Alle"
     }
   },
   "DepartureAndEntry": {
@@ -94,7 +97,7 @@
       "AddressLine1": "204",
       "AddressLine2": "7021",
       "AddressLine3": "Odense",
-      "AddressLine4": "Smørum",
+      "AddressLine4": "Smï¿½rum",
       "AddressLine5": "Hove"
     }
   }

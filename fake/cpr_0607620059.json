@@ -42,7 +42,10 @@
       "MovedAway": "1965-01-01T12:00:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Jørgensen"
+      "CareOfAddress": "Jï¿½rgensen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     },
     {
       "BuildingNo": null,
@@ -61,7 +64,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Kjørgaard"
+      "CareOfAddress": "Kjï¿½rgaard",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [

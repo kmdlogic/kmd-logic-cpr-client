@@ -42,7 +42,10 @@
       "MovedAway": "1976-05-05T12:00:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Jacobsen"
+      "CareOfAddress": "Jacobsen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     },
     {
       "BuildingNo": null,
@@ -61,7 +64,10 @@
       "MovedAway": "1995-05-05T12:00:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Olsson"
+      "CareOfAddress": "Olsson",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     },
     {
       "BuildingNo": null,
@@ -80,7 +86,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Dalgaard"
+      "CareOfAddress": "Dalgaard",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [

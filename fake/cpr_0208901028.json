@@ -64,7 +64,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Ahmed"
+      "CareOfAddress": "Ahmed",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [
@@ -110,7 +113,7 @@
       "AddressLine1": "003",
       "AddressLine2": "2650",
       "AddressLine3": "Gevninge",
-      "AddressLine4": "Smørum",
+      "AddressLine4": "Smï¿½rum",
       "AddressLine5": "Hove"
     }
   }

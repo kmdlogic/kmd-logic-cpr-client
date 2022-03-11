@@ -42,7 +42,10 @@
       "MovedAway": "1999-01-01T12:00:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Eskildsen"
+      "CareOfAddress": "Eskildsen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     },
     {
       "BuildingNo": null,
@@ -61,7 +64,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Høj"
+      "CareOfAddress": "Hï¿½j",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [
@@ -90,7 +96,7 @@
       "AddressLine1": "005",
       "AddressLine2": "2650",
       "AddressLine3": "Gevninge",
-      "AddressLine4": "Smørum",
+      "AddressLine4": "Smï¿½rum",
       "AddressLine5": "Hove"
     }
   },
@@ -104,7 +110,7 @@
     "ForeignAddress": {
       "AddressLine1": "009",
       "AddressLine2": "2540",
-      "AddressLine3": "Otto-Hahn-Straße 1",
+      "AddressLine3": "Otto-Hahn-Straï¿½e 1",
       "AddressLine4": "85055 Ingolstadt",
       "AddressLine5": "Germany"
     }

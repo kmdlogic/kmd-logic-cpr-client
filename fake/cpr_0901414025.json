@@ -10,7 +10,7 @@
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
   "AddressingName": "Arne Henriksen",
-  "Position": "Ingeniør",
+  "Position": "Ingeniï¿½r",
   "Sex": "Man",
   "DateOfBirth": "1975-01-01T12:00:00.000000+01:00",
   "DateOfBirthUncertainityMarking": false,
@@ -42,7 +42,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Andreassen"
+      "CareOfAddress": "Andreassen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [
@@ -70,7 +73,7 @@
       "AddressLine1": "003",
       "AddressLine2": "2650",
       "AddressLine3": "Gevninge",
-      "AddressLine4": "Smørum",
+      "AddressLine4": "Smï¿½rum",
       "AddressLine5": "Hove"
     }
   },

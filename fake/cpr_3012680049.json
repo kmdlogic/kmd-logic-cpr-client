@@ -42,7 +42,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": null
+      "CareOfAddress": null,
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     },
     {
       "BuildingNo": null,
@@ -61,7 +64,10 @@
       "MovedAway": "1992-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": null
+      "CareOfAddress": null,
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     },
     {
       "BuildingNo": null,
@@ -80,7 +86,10 @@
       "MovedAway": "1995-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": null
+      "CareOfAddress": null,
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     }
   ],
   "Citizenships": [

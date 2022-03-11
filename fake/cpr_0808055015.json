@@ -10,7 +10,7 @@
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
   "AddressingName": "Carsten Hansen",
-  "Position": "Lærer",
+  "Position": "Lï¿½rer",
   "Sex": "Man",
   "DateOfBirth": "1995-01-01T12:00:00.000000+01:00",
   "DateOfBirthUncertainityMarking": true,
@@ -64,7 +64,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Davidsen"
+      "CareOfAddress": "Davidsen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [
@@ -85,7 +88,7 @@
       "AddressLine1": "003",
       "AddressLine2": "2650",
       "AddressLine3": "Gevninge",
-      "AddressLine4": "Smørum",
+      "AddressLine4": "Smï¿½rum",
       "AddressLine5": "Hove"
     }
   },

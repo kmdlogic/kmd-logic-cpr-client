@@ -64,7 +64,10 @@
       "MovedAway": "1998-10-04T12:00:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Johannessen"
+      "CareOfAddress": "Johannessen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     },
     {
       "BuildingNo": null,
@@ -103,9 +106,9 @@
     "Address": {
       "AddressLine1": "011",
       "AddressLine2": "1730",
-      "AddressLine3": "Lyngby-Taarbæk",
-      "AddressLine4": "Hillerød",
-      "AddressLine5": "C.V.Jørgensens Alle"
+      "AddressLine3": "Lyngby-Taarbï¿½k",
+      "AddressLine4": "Hillerï¿½d",
+      "AddressLine5": "C.V.Jï¿½rgensens Alle"
     }
   },
   "DepartureAndEntry": {

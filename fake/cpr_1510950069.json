@@ -42,7 +42,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Thygesen"
+      "CareOfAddress": "Thygesen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     },
     {
       "BuildingNo": null,
@@ -61,7 +64,10 @@
       "MovedAway": "2017-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Nielsen"
+      "CareOfAddress": "Nielsen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     }
   ],
   "Citizenships": [

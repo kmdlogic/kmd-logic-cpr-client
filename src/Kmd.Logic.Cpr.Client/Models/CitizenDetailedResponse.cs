@@ -24,7 +24,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// Initializes a new instance of the CitizenDetailedResponse class.
         /// </summary>
-        public CitizenDetailedResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string middleName = default(string), string cpr = default(string), string maritalStatus = default(string), System.DateTime? fromMarriedDate = default(System.DateTime?), bool? fromMarriedUncertainityMarking = default(bool?), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<Address> addresses = default(IList<Address>), IList<Citizenship> citizenships = default(IList<Citizenship>), string addressingName = default(string), System.DateTime? dateOfBirth = default(System.DateTime?), bool? dateOfBirthUncertainityMarking = default(bool?), string birthRegistrationLocationCode = default(string), string birthRegistrationLocationName = default(string), string supplementalBirthRegistartionPlace = default(string), string sex = default(string), string position = default(string), System.DateTime? statusDate = default(System.DateTime?), bool? statusDateUncertainityMarking = default(bool?), IList<Children> children = default(IList<Children>), string firstNameMarking = default(string), string middleNameMarking = default(string), string lastNameMarking = default(string), SpouseDetails spouse = default(SpouseDetails))
+        public CitizenDetailedResponse(System.Guid id, bool nameAndAddressProtection, string firstName = default(string), string lastName = default(string), string middleName = default(string), string cpr = default(string), string maritalStatus = default(string), System.DateTime? fromMarriedDate = default(System.DateTime?), bool? fromMarriedUncertainityMarking = default(bool?), string status = default(string), IList<Parent> parents = default(IList<Parent>), IList<LegalGuardian> legalGuardians = default(IList<LegalGuardian>), IList<AddressResponse> addresses = default(IList<AddressResponse>), IList<Citizenship> citizenships = default(IList<Citizenship>), string addressingName = default(string), System.DateTime? dateOfBirth = default(System.DateTime?), bool? dateOfBirthUncertainityMarking = default(bool?), string birthRegistrationLocationCode = default(string), string birthRegistrationLocationName = default(string), string supplementalBirthRegistartionPlace = default(string), string sex = default(string), string position = default(string), System.DateTime? statusDate = default(System.DateTime?), bool? statusDateUncertainityMarking = default(bool?), IList<Children> children = default(IList<Children>), string firstNameMarking = default(string), string middleNameMarking = default(string), string lastNameMarking = default(string), SpouseDetails spouse = default(SpouseDetails))
         {
             Id = id;
             FirstName = firstName;
@@ -126,7 +126,7 @@ namespace Kmd.Logic.Cpr.Client.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "addresses")]
-        public IList<Address> Addresses { get; set; }
+        public IList<AddressResponse> Addresses { get; set; }
 
         /// <summary>
         /// </summary>
