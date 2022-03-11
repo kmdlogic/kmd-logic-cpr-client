@@ -42,7 +42,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Olsson"
+      "CareOfAddress": "Olsson",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [

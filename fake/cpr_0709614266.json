@@ -42,7 +42,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Henriksen"
+      "CareOfAddress": "Henriksen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [

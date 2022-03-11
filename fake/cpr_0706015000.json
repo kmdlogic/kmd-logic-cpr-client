@@ -64,7 +64,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Bjerre"
+      "CareOfAddress": "Bjerre",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [

@@ -48,7 +48,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Clausen"
+      "CareOfAddress": "Clausen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [

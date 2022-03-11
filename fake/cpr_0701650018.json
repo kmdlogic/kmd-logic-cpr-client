@@ -10,7 +10,7 @@
   "MaritalStatus": "Married",
   "Status": "ResidenceInDenmark",
   "AddressingName": "Mona Hansen",
-  "Position": "Ingeniør",
+  "Position": "Ingeniï¿½r",
   "Sex": "Woman",
   "DateOfBirth": "1960-01-01T12:00:00.000000+01:00",
   "DateOfBirthUncertainityMarking": true,
@@ -42,7 +42,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": null
+      "CareOfAddress": null,
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [
@@ -67,7 +70,7 @@
       "AddressLine1": "005",
       "AddressLine2": "2650",
       "AddressLine3": "Gevninge",
-      "AddressLine4": "Smørum",
+      "AddressLine4": "Smï¿½rum",
       "AddressLine5": "Hove"
     }
   },

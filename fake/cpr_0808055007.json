@@ -64,7 +64,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Mikkelsen"
+      "CareOfAddress": "Mikkelsen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [
@@ -84,9 +87,9 @@
     "Address": {
       "AddressLine1": "011",
       "AddressLine2": "1730",
-      "AddressLine3": "Lyngby-Taarbæk",
-      "AddressLine4": "Hillerød",
-      "AddressLine5": "C.V.Jørgensens Alle"
+      "AddressLine3": "Lyngby-Taarbï¿½k",
+      "AddressLine4": "Hillerï¿½d",
+      "AddressLine5": "C.V.Jï¿½rgensens Alle"
     }
   },
   "DepartureAndEntry": {

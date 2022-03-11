@@ -59,7 +59,10 @@
       "MovedAway": "2014-01-01T12:00:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Christoffersen"
+      "CareOfAddress": "Christoffersen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     },
     {
       "BuildingNo": null,
@@ -78,7 +81,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Johannesen"
+      "CareOfAddress": "Johannesen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [

@@ -10,7 +10,7 @@
   "MaritalStatus": "Single",
   "Status": "ResidenceInDenmark",
   "AddressingName": "Gert Svensson",
-  "Position": "Læge",
+  "Position": "Lï¿½ge",
   "Sex": "Man",
   "DateOfBirth": "1962-01-01T12:00:00.000000+01:00",
   "DateOfBirthUncertainityMarking": true,
@@ -59,7 +59,10 @@
       "MovedAway": "1970-01-01T17:12:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Clemmensen"
+      "CareOfAddress": "Clemmensen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     },
     {
       "BuildingNo": null,
@@ -78,7 +81,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Markussen"
+      "CareOfAddress": "Markussen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [
@@ -115,7 +121,7 @@
       "AddressLine1": "003",
       "AddressLine2": "2650",
       "AddressLine3": "Gevninge",
-      "AddressLine4": "Smørum",
+      "AddressLine4": "Smï¿½rum",
       "AddressLine5": "Hove"
     }
   },

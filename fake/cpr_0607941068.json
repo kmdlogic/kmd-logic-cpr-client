@@ -64,7 +64,10 @@
       "MovedAway": "2015-01-01T12:00:00.000000+01:00",
       "Iscurrent": false,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Markussen"
+      "CareOfAddress": "Markussen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": null
     },
     {
       "BuildingNo": null,
@@ -83,7 +86,10 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": true,
-      "CareOfAddress": "Ebbesen"
+      "CareOfAddress": "Ebbesen",
+      "DarAddressId": "204",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
     }
   ],
   "Citizenships": [

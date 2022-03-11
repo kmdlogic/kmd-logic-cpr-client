@@ -48,7 +48,11 @@
       "MovedAway": null,
       "Iscurrent": true,
       "VacatingDateUncertainityMarking": false,
-      "CareOfAddress": "Jensen"
+      "CareOfAddress": "Jensen",
+      "DarAddressId": "333",
+      "EffectFromUncertainityMarking": false,
+      "Status": "current"
+      
     }
   ],
   "Citizenships": [
