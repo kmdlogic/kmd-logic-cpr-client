@@ -1,3 +1,6 @@
+2.1.1
+* Updated response for fake cpr get end point
+
 2.1.0
 * Added methods to get cpr details by cpr for private company
 
