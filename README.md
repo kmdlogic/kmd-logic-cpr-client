@@ -21,6 +21,53 @@ The `LogicTokenProviderFactory` authorizes access to the Logic platform through 
 
 The `CprClient` accesses the Logic CPR service which in turn interacts with one of the data providers.
 
+## Get Your Certificate
+
+Logic CPR requires two certificates i.e. FOCES/MOCES for creating CPR configuration.
+- FOCES certificate is needed in order to authenticate and use DataFordeler
+- MOCES certificate is needed in order to authenticate and use ServicePlatform
+
+## Get Your FOCES/MOCES Certificate
+
+Follow the below steps, to create a FOCES/MOCES certificate
+
+1. Raise certificate request on [Service Portal](http://3101.kmd.dk/default/formular/default.html)
+and then navigate to `IT Service` --> `Certificate request` 
+
+![Service Portal](docs/ServicePortal-Login.PNG)
+
+2. Enter the required information for the certificate.
+3. Enter user details and project cost.
+4. Choose 'environment' based on your needs.
+5. Select certificate according to your requirement, here we choose `MOCES` or `FOCES` certificate.
+6. Add `technical contact` and name of person responsible for `functional certificate`.
+7. Specify the name of the certificate.
+8. Click on submit button to create request.
+
+![Details](docs/Service-Portal-Details.PNG)
+
+9. You will receive two emails one with a temporary password and the other with a link to a new certificate.
+
+   ![mail](docs/Mail-For-Certificate.PNG) 
+   ![mail](docs/Mail-with-temporary-password.png)
+
+## Map The Certificate To The User And The Methods
+   
+Follow the below steps, mapping of the certificate to the user and the service methods:
+    
+1. Create a user on [selfservice.datafordeler.dk](https://selfservice.datafordeler.dk/)
+2. Login using your credentials and upload your certificate.
+
+  ![Datafordeler](docs/Datafordeler-Login.PNG)
+
+3. Subsequently when you call the datafordeler endpoint by authenticating with the certificate, user will be recognized as the certificate is already mapped to user.
+4. Get the access to the services(private/public methods) by creating a request on  [datafordeler support](https://datafordeler.dk/support) with service name, webbrugger and user.
+
+![Private Methods](docs/PrivateCPREndpoint.PNG)
+![Public Methods](docs/PublicCPREndpoint.PNG)
+
+
+
 ## How to configure the CPR client
 
 Perhaps the easiest way to configure the CPR client is from Application Settings.
